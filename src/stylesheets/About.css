@@ -1,0 +1,50 @@
+.about {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    height: 88vh;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.about-skills {
+    display: flex;
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills-icons {
+    font-size: 5rem;
+}
+
+
+.html-icon {
+    color: orangered;
+}
+
+.css3 {
+    color: #2244E0;
+}
+
+.javascript {
+    color: #EED646;
+}
+
+.react {
+    color: #56D5FA;
+}
+
+.java {
+    color: #EA1D21;
+}
+
+.node {
+    color: #85BD37;
+}
+
+.github {
+    color: black;
+}

@@ -1,0 +1,52 @@
+.home {
+    height: 90vh;
+
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.container-name {
+    font-size: 3rem;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-family: "Berkshire Swash";
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.container-text {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 50vh;
+    color: var(--secondary-color);
+}
+
+.container-img {
+    width: 30vw;
+    border: solid 20px white;
+    border-bottom: solid 70px white;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.home-callButton {
+    border: solid white 1px;
+    padding: 1rem;
+    border-radius: 30px;
+    transition: all 1s ease-in-out;
+}
+
+.home-callButton:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
