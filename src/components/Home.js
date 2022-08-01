@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import "../stylesheets/Home.css";
 import { motion } from "framer-motion";
 import selfie from "../selfie.png";
+import { fadeIn, title, staggerContainer } from "./Variants";
 
 function Home() {
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [isMouseOver, setIsMouseOver] = useState(false);
-
   return (
     <motion.div
       className="home"
@@ -16,31 +14,38 @@ function Home() {
     >
       <div className="home-container">
         <div className="container-text">
-          <h1 className="container-name">Sahd Khan</h1>
-          <h2>FrontEnd Developer</h2>
-          <h3 className="home-callButton">Contact Me</h3>
-          {/* <div className="text-skills">
-            <DiHtml5 className="skills-icons html" />
-            <DiCss3 className="skills-icons css3" />
-            <DiJavascript1 className="skills-icons javascript" />
-            <DiReact className="skills-icons react" />
-            <DiJava className="skills-icons java" />
-            <DiGithubBadge className="skills-icons github" />
-            <DiNodejs className="skills-icons node" />
-  </div> */}
+          <motion.h1
+            className="container-name"
+            variants={fadeIn}
+            initial="hidden"
+            animate="show"
+          >
+            Sahd Khan
+          </motion.h1>
+          <motion.h2
+            variants={title}
+            initial="hidden"
+            animate="show"
+            className="container-job"
+          >
+            FrontEnd Developer
+          </motion.h2>
+          <motion.h3
+            className="home-callButton container-item"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+          >
+            Contact Me
+          </motion.h3>
+          <motion.img
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="selfie"
+            src={selfie}
+          />
         </div>
-        <motion.img
-          className="container-img"
-          src={selfie}
-          alt=" Me"
-          animate={{
-            rotate: isAnimating ? 360 : 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          onMouseOver={() => setIsAnimating(!isAnimating)}
-        />
       </div>
     </motion.div>
   );

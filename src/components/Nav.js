@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../stylesheets/Nav.css";
 import { AiFillHome } from "react-icons/ai";
 import { AiFillProfile } from "react-icons/ai";
-import { GrProjects } from "react-icons/gr";
+import { RiGalleryLine } from "react-icons/ri";
 import { FcContacts } from "react-icons/fc";
 
 function Nav() {
@@ -21,7 +21,7 @@ function Nav() {
       </Link>
       <Link to="/projects" className="nav-link">
         <p className="nav-text">
-          Projects <GrProjects />
+          Projects <RiGalleryLine className="project-icon" />
         </p>
       </Link>
       <Link to="/contact" className="nav-link">

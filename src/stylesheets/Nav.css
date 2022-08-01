@@ -20,7 +20,7 @@
 }
 
 .nav p {
-    box-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .nav-text {
@@ -30,3 +30,6 @@
 
 }
 
+.project-icon {
+    color: white !important;
+}

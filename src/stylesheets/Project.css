@@ -1,0 +1,76 @@
+.project {
+    height: 90vh;
+}
+
+.item {
+    min-height: 30rem;
+    min-width: 20rem;
+    padding: 40px;
+    margin-right: 2rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    pointer-events: none;
+    box-shadow: var(--box-shadow);
+}
+
+.inner-Container {
+    display: flex;
+    padding: 3rem;
+
+}
+
+.project-Container {
+    cursor: grab;
+    overflow: hidden;
+    width: 60vw;
+    margin: auto;
+
+}
+
+.item-text {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.05);
+    text-shadow: var(--text-shadow);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--box-shadow);
+}
+
+.drag-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.click-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    cursor: pointer;
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    transition: all 1s ease-in-out;
+}
+
+.click-button:hover {
+    background-color: var(--alt-color);
+    color: white;
+}
+
+.link {
+    color: black;
+}

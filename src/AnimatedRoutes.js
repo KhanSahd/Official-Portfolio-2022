@@ -12,7 +12,7 @@ function AnimatedRoutes() {
     <Routes
       location={location}
       key={location.pathname}
-      classname="animatedroutes"
+      className="animatedroutes"
     >
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Project />} />
