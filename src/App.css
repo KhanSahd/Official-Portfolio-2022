@@ -15,6 +15,13 @@
   0 5px 10px rgba(0,0,0,.25),
   0 10px 10px rgba(0,0,0,.2),
   0 20px 20px rgba(0,0,0,.15);
+  --subtle-text: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+
+  --about-textbg: #E5ECE9;
+  --about-mainbg: #D6D1CD;
+  --about-border: solid 10px #969A97;
+
 }
 
 * {
@@ -26,7 +33,7 @@
 body {
   font-family: 'Bebas Neue', serif;
   background-position: center;
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/pexels-felipe-ribeiro-2271683.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

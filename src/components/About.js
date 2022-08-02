@@ -9,6 +9,7 @@ import { DiJava } from "react-icons/di";
 import { DiGithubBadge } from "react-icons/di";
 import { DiNodejs } from "react-icons/di";
 import me from "../images/mypic.jpeg";
+import { staggerContainer } from "./Variants";
 
 function About() {
   return (
@@ -21,20 +22,24 @@ function About() {
       <div className="about-container">
         <div className="pic-name">
           <img src={me} className="pic" />
-          <h2 className="name">Sahd Khan</h2>
+          <h3 className="name">Sahd Khan</h3>
         </div>
 
         <div className="birthday">
-          <h2 className="birthday-date">March</h2>
-          <h2 className="birthday-date">28</h2>
-          <h2 className="birthday-date">1999</h2>
+          <h3 className="birthday-date month">March 28, 1999</h3>
         </div>
 
-        {/*
-      <div className="about-leftside">
-        <div className="skills-container">
-          <h3 className="skills-heading">Languages</h3>
-          <div className="about-skills">
+        <div className="biography">
+          <h2 className="bio-title">Biography</h2>
+          <p className="bio-item">• Senior at Sacramento State University</p>
+          <p className="bio-item">• Majoring in Computer Science</p>
+          <p className="bio-item">• Loves music, learning, and working out</p>
+          <p className="bio-item">• Probably distracted by code</p>
+        </div>
+
+        <div className="languages">
+          <h2 className="languages-title">Languages</h2>
+          <div className="languages-lang">
             <DiHtml5 className="skills-icons html-icon" />
             <DiCss3 className="skills-icons css3" />
             <DiJavascript1 className="skills-icons javascript" />
@@ -44,8 +49,6 @@ function About() {
             <DiNodejs className="skills-icons node" />
           </div>
         </div>
-      </div>
-      */}
       </div>
     </motion.div>
   );

@@ -21,10 +21,10 @@
 }
 
 .container-name {
-    font-size: 20rem;
+    font-size: 10rem;
     text-transform: uppercase;
     color: var(--secondary-color);
-    font-family: "Bebas Neue";
+    font-family: "Rajdhani";
     text-shadow: var(--text-shadow);
 }
 
