@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import AboutNew from "./components/AboutNew";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -14,7 +15,7 @@ function AnimatedRoutes() {
       key={location.pathname}
       className="animatedroutes"
     >
-      <Route path="/about" element={<About />} />
+      <Route path="/about" element={<AboutNew />} />
       <Route path="/projects" element={<Project />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/" element={<Home />} />

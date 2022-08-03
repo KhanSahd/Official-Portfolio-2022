@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import "../stylesheets/Home.css";
 import { motion } from "framer-motion";
-import selfie from "../selfie.png";
-import { fadeIn, title, staggerContainer } from "./Variants";
+// import selfie from "../selfie.png";
+import { fadeIn, title } from "./Variants";
 
 function Home() {
   return (
@@ -38,6 +37,7 @@ function Home() {
           >
             Contact Me
           </motion.h3>
+          {/* 
           <motion.img
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
@@ -45,6 +45,7 @@ function Home() {
             className="selfie"
             src={selfie}
           />
+          */}
         </div>
       </div>
     </motion.div>

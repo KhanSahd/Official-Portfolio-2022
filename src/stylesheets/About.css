@@ -1,12 +1,12 @@
 .about {
     color: white;
-    background-image: url("../images/aboutbg.jpg");
+    
 }
 
 .about-container {
     height: 90vh;
     max-width: 90vw;
-    margin: 0 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -15,6 +15,7 @@
     gap: 10px;
     border-radius: 50px;
     box-shadow: var(--box-shadow);
+
 }
 
 .about-container h2, .about-container h3 {

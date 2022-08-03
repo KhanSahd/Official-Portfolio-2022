@@ -4,8 +4,10 @@
     justify-content: space-between;
     padding: 1rem;
     height: 10vh;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100vw;
+    z-index: 100;
 
 }
 
@@ -20,7 +22,7 @@
 }
 
 .nav p {
-    box-shadow: var(--box-shadow);
+    text-shadow: var(--subtle-text);
 }
 
 .nav-text {

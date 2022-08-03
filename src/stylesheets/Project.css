@@ -1,5 +1,7 @@
 .project {
-    height: 90vh;
+    height: 100vh;
+    padding-top: 10vh;
+    background-image: url("../images/projectsbg.jpg");
 }
 
 .item {

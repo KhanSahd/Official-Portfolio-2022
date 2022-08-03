@@ -1,5 +1,10 @@
 .home {
-    height: 90vh;
+    height: 100vh;
+    background-position: center;
+    background-image: url("../images/pexels-felipe-ribeiro-2271683.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .home-container {
@@ -7,6 +12,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -25,7 +32,8 @@
     text-transform: uppercase;
     color: var(--secondary-color);
     font-family: "Rajdhani";
-    text-shadow: var(--text-shadow);
+    text-shadow: var(--subtle-text);
+    font-weight: 400;
 }
 
 .container-text {
