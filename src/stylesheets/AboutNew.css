@@ -1,0 +1,73 @@
+
+
+.aboutNew-parallax {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-image: url("../images/pexels-felipe-ribeiro-2271683.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.para-layer {
+    min-height: 100%;
+    padding-top: 10vh;
+    position: relative;
+}
+
+.blue {
+    background-color: #473BF0;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.wave .shape-fill {
+    fill: #473BF0;
+}
+
+.pink {
+    background-color: #F564A9;
+}
+
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.triangle svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 139px;
+}
+
+.triangle .shape-fill {
+    fill: #F564A9;
+}
+
+.bisque {
+    background-color: #FAE3C6;
+}
+
+
+
+
+
