@@ -29,23 +29,21 @@ function Home() {
           >
             FrontEnd Developer
           </motion.h2>
-          <motion.h3
-            className="home-callButton container-item"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
-          >
-            Contact Me
-          </motion.h3>
-          {/* 
-          <motion.img
-            initial={{ y: -1000 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="selfie"
-            src={selfie}
-          />
-          */}
+          <a href="mailto:03sahd@gmail.com" className="link-button">
+            <motion.h3
+              className="home-callButton container-item"
+              animate={{ y: 30, scale: 1.5 }}
+              transition={{
+                repeat: Infinity,
+                duration: 0.2,
+                repeatType: "reverse",
+                repeatDelay: 0.5,
+                type: "tween",
+              }}
+            >
+              Contact Me
+            </motion.h3>
+          </a>
         </div>
       </div>
     </motion.div>

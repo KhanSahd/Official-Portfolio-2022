@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 
 .aboutNew-parallax {
-    width: 100vw;
+    height: 100vh !important;
+    width: 100vw !important;
     height: 100vh;
     background-position: center;
     background-image: url("../images/pexels-felipe-ribeiro-2271683.jpg");
@@ -10,13 +12,32 @@
 }
 
 .para-layer {
-    min-height: 100%;
+    height: 100%;
     padding-top: 10vh;
     position: relative;
 }
 
-.blue {
-    background-color: #473BF0;
+.red {
+    background: hsla(307, 93%, 84%, 1);
+    background: linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCB0F3", endColorstr="#3D05DD", GradientType=1 );
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.aboutNew-scroll {
+    font-size: 1.3rem;
+    color: white;
+    position: absolute;
+    top: 95vh;
+    
 }
 
 .wave {
@@ -36,11 +57,26 @@
 }
 
 .wave .shape-fill {
-    fill: #473BF0;
+    fill: hsla(307, 93%, 84%, 1);
 }
 
 .pink {
-    background-color: #F564A9;
+    background: hsla(0, 100%, 67%, 1);
+    background: linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF5858", endColorstr="#FFC8C8", GradientType=1 );
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
 }
 
 .triangle {
@@ -60,14 +96,200 @@
 }
 
 .triangle .shape-fill {
-    fill: #F564A9;
+    fill: hsla(0, 100%, 67%, 1);
 }
 
 .bisque {
-    background-color: #FAE3C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutNew-me {
+    font-size: 3rem;
+    padding: 1rem 3rem;
+    color: white;
+}
+
+.me {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 3rem;
+}
+
+.me-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.me p {
+    color: white;
+}
+
+
+.languages-section {
+    width: 100vw;
+    height: 100vh;
+    border: solid red 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-box {
+    width: 100%;
+    height: 50%;
+    border: solid red 1px;
+}
+
+.lang {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.lang-heading {
+    position: relative;
+    font-size: 3rem;
+}
+
+.lang-heading h1 {
+    color: white;
+    position: absolute;
+    left: 20%;
+}
+
+.html-icon {
+    color: orangered;
+    position: absolute;
+    right: 100px;
+}
+
+.css3 {
+    color: #2244E0;
+    position: absolute;
+    left: 100px;
+}
+
+.javascript {
+    color: #EED646;
+    position: absolute;
+    left: 500px;
+}
+
+.react {
+    color: #56D5FA;
+    position: absolute;
+    right: 100px;
+}
+
+.java {
+    color: #EA1D21;
+    position: absolute;
+    right: 500px;
+    top: 0;
+}
+
+.node {
+    color: #85BD37;
+    position: absolute;
+    left: 200px;
+}
+
+.github {
+    color: black;
+    position: absolute;
+    left: 400px;
+}
+
+.lang-pic {
+    width: 200px;
+    height: 200px;
+}
+
+.quote-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
 }
 
 
 
+.quote-box h1 {
+    text-align: center;
+    
+}
 
+.quote-box h2 {
+    padding-right: 5%;
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    .me {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+   .info {
+    font-size: 1rem;
+    text-align: center;
+   }
+
+   .lang-heading { 
+        font-size: 2rem;
+
+   }
+
+   .lang-pic {
+        width: 100px;
+        height: 100px;
+   }
+
+   .react {
+    top: 100px;
+   }
+
+   .css3 {
+    left: 50px;
+   }
+
+   .node {
+    left: 150px;
+   }
+
+   .javascript {
+    left: 100px;
+    top: 150px;
+   }
+
+   .github {
+    left: 200px;
+   }
+
+   .java {
+    left: 40px;
+    top: 100px;
+   }
+
+   .quote-box {
+    font-size: 1.5rem;
+    padding: .5rem;
+   }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .info {
+        text-align: center;
+        padding: .5rem;
+    }
+}
 

@@ -1,7 +1,7 @@
 .project {
     height: 100vh;
     padding-top: 10vh;
-    background-image: url("../images/projectsbg.jpg");
+    background: linear-gradient(315deg, #1e2ba8 0%, #1ca996 100%)
 }
 
 .item {

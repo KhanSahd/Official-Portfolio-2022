@@ -10,18 +10,20 @@ import { DiGithubBadge } from "react-icons/di";
 import { DiNodejs } from "react-icons/di";
 import me from "../images/mypic.jpeg";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import About from "./About";
+import { logos, heading } from "./Variants";
 
 function AboutNew() {
   return (
-    <Parallax pages={3} className="aboutNew-parallax">
-      <ParallaxLayer className="para-layer blue moon" speed={1}>
-        <About />
-      </ParallaxLayer>
-      <ParallaxLayer className="para-layer pink clouds" offset={1} speed={0.5}>
-        <h1>I have no idea what im doing</h1>
+    <Parallax pages={4} className="aboutNew-parallax">
+      {/*------------------------------------ BACKGROUNDS ---------------- */}
+      <ParallaxLayer
+        className="para-layer red"
+        offset={0}
+        factor={2}
+      ></ParallaxLayer>
 
-        <div class="wave">
+      <ParallaxLayer className="para-layer pink" offset={2} factor={2}>
+        <div className="wave">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,23 +47,117 @@ function AboutNew() {
           </svg>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="para-layer bisque" offset={2}>
-        <h1>New Layer</h1>
+      {/*------------------------------------ BACKGROUNDS ---------------- */}
 
-        <div class="triangle">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 0L0 0 892.25 114.72 1200 0z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
+      {/*------------------------------------ first heading ---------------- */}
+      <ParallaxLayer className="bisque" offset={0} speed={3}>
+        <motion.h1
+          className="aboutNew-me"
+          initial={{ x: -1000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          About Me
+        </motion.h1>
+        <motion.p
+          className="aboutNew-scroll"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1.1 }}
+          transition={{ delay: "1" }}
+        >
+          Scroll Down
+        </motion.p>
       </ParallaxLayer>
+      {/*------------------------------------ first heading ---------------- */}
+
+      {/*------------------------------------ second heading ---------------- */}
+      <ParallaxLayer className="info" offset={1} speed={0.5}>
+        <h2>Senior at Sacramento State University,</h2>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="info" offset={1.1} speed={1.5}>
+        <h2>I Love Learning, playing sports, and listening to music,</h2>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="info" offset={1.2} speed={1}>
+        <h2>Probably Coding...</h2>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="me" offset={1} speed={1.4}>
+        <img className="me-pic" src={me} alt="me" />
+        <p>Name: Sahd Khan</p>
+        <p>DOB: 03/28/1999</p>
+      </ParallaxLayer>
+      {/*------------------------------------ second heading ---------------- */}
+
+      {/* ----------------- languages-logos ------------------------------   */}
+      <ParallaxLayer className="lang-heading" offset={2.2}>
+        <motion.h1 variants={heading} initial="hidden" whileInView="visible">
+          My palette
+        </motion.h1>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.2} speed={0.3}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiReact className="lang-pic react" />
+        </motion.div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.5} speed={0.5}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiCss3 className="lang-pic css3" />
+        </motion.div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.6} speed={1.2}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiJavascript1 className="lang-pic javascript" />
+        </motion.div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.7} speed={2}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiHtml5 className="lang-pic html-icon" />
+        </motion.div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.8} speed={1.3}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiJava className="lang-pic java" />
+        </motion.div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.9} speed={0.8}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiGithubBadge className="lang-pic github" />
+        </motion.div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.6} speed={2.2}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiNodejs className="lang-pic node" />
+        </motion.div>
+      </ParallaxLayer>
+      {/* ----------------- languages-logos ------------------------------  */}
+
+      {/* ----------------- languages-logos ------------------------------  */}
+
+      <ParallaxLayer className="quote-box" offset={3}>
+        <motion.div
+          className="quote"
+          variants={logos}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <h1>
+            "The happiness of your life depends upon the quality of your
+            thoughts"
+          </h1>
+          <h2>- Marcus Aurelius</h2>
+        </motion.div>
+      </ParallaxLayer>
+
+      {/* ----------------- languages-logos ------------------------------  */}
     </Parallax>
   );
 }
