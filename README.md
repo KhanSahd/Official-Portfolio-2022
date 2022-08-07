@@ -4,7 +4,7 @@ A web Portfolio created to showcase my frontend development skills.
 
 ## Screenshots
 
-![App Screenshot]("./screenshot.png")
+![App Screenshot](screenshot.png)
 
 ## Tech Stack
 
