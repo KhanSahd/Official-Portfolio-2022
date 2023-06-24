@@ -1,13 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../stylesheets/AboutNew.css";
-import { DiReact } from "react-icons/di";
-import { DiCss3 } from "react-icons/di";
-import { DiJavascript1 } from "react-icons/di";
-import { DiHtml5 } from "react-icons/di";
-import { DiJava } from "react-icons/di";
-import { DiGithubBadge } from "react-icons/di";
-import { DiNodejs } from "react-icons/di";
+// import { DiReact } from "react-icons/di";
+// import { DiCss3 } from "react-icons/di";
+// import { DiJavascript1 } from "react-icons/di";
+// import { DiHtml5 } from "react-icons/di";
+// import { DiJava } from "react-icons/di";
+// import { DiGithubBadge } from "react-icons/di";
+// import { DiNodejs } from "react-icons/di";
+import {
+  DiMongodb,
+  DiReact,
+  DiCss3,
+  DiJavascript1,
+  DiHtml5,
+  DiJava,
+  DiGithubBadge,
+  DiNodejs,
+  DiPython,
+  DiMysql,
+  DiPhp,
+  DiFirebase,
+} from "react-icons/di";
+import { SiTailwindcss, SiRedux } from "react-icons/si";
 import me from "../images/mypic.jpeg";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { logos, heading } from "./Variants";
@@ -84,7 +99,7 @@ function AboutNew() {
       </ParallaxLayer>
 
       <ParallaxLayer className="me" offset={1} speed={1.4}>
-        <img className="me-pic" src={me} alt="me" />
+        <img className="me-pic" src={me} alt="picture of Sahd Khan" />
         <p>Name: Sahd Khan</p>
         <p>DOB: 03/28/1999</p>
       </ParallaxLayer>
@@ -103,9 +118,21 @@ function AboutNew() {
         </motion.div>
       </ParallaxLayer>
 
+      <ParallaxLayer className="lang" offset={2.2} speed={1.7}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <DiMongodb className="lang-pic mongo" />
+        </motion.div>
+      </ParallaxLayer>
+
       <ParallaxLayer className="lang" offset={2.5} speed={0.5}>
         <motion.div variants={logos} initial="hidden" whileInView="visible">
-          <DiCss3 className="lang-pic css3" />
+          <DiPython className="lang-pic python" />
+        </motion.div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="lang" offset={2.5} speed={0.5}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <SiTailwindcss className="lang-pic tailwind" />
         </motion.div>
       </ParallaxLayer>
 
@@ -115,9 +142,15 @@ function AboutNew() {
         </motion.div>
       </ParallaxLayer>
 
+      <ParallaxLayer className="lang" offset={2.8} speed={1.2}>
+        <motion.div variants={logos} initial="hidden" whileInView="visible">
+          <SiRedux className="lang-pic redux" style={{ width: "150px" }} />
+        </motion.div>
+      </ParallaxLayer>
+
       <ParallaxLayer className="lang" offset={2.7} speed={2}>
         <motion.div variants={logos} initial="hidden" whileInView="visible">
-          <DiHtml5 className="lang-pic html-icon" />
+          <DiPhp className="lang-pic php" />
         </motion.div>
       </ParallaxLayer>
 
@@ -129,7 +162,8 @@ function AboutNew() {
 
       <ParallaxLayer className="lang" offset={2.9} speed={0.8}>
         <motion.div variants={logos} initial="hidden" whileInView="visible">
-          <DiGithubBadge className="lang-pic github" />
+          {/* <DiMysql className="lang-pic sql" /> */}
+          <p className="express">Express</p>
         </motion.div>
       </ParallaxLayer>
 

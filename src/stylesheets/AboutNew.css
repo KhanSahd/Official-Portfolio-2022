@@ -161,13 +161,14 @@
     left: 20%;
 }
 
-.html-icon {
+.php {
     color: orangered;
     position: absolute;
-    right: 100px;
+    right: 200px;
+    top: 0;
 }
 
-.css3 {
+.python {
     color: #2244E0;
     position: absolute;
     left: 100px;
@@ -196,12 +197,39 @@
     color: #85BD37;
     position: absolute;
     left: 200px;
+    /* bottom: 100px; */
+    top: 121px;
 }
 
-.github {
-    color: black;
+.express {
+    color: white;
     position: absolute;
-    left: 400px;
+    left: 480px;
+    top: 20px;
+    font-size: 2rem;
+    font-family: 'helvetica';
+    font-weight: lighter;
+}
+
+.mongo {
+    position: absolute;
+    right: 400px;
+    top: 108px;
+    color: #4DB33D;
+}
+
+.tailwind {
+    position: absolute;
+    right: 200px;
+    top: 198px;
+    color: #15AACC;
+}
+
+.redux {
+    position: absolute;
+    top: 189px;
+    left: 100px;
+    color: #764ABC;
 }
 
 .lang-pic {
